@@ -1,0 +1,22 @@
+{
+    "name": "webforge/collections",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@ps-webforge.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "doctrine/collections": "1.2.*@dev"
+    },
+    "require-dev": {
+        "webforge/testplate": "1.2.*@dev"
+    },
+    "autoload": {
+        "psr-0": {
+            "Webforge\\Collections": ["lib/", "tests/"]
+        }
+    }
+}

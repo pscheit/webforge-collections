@@ -1,5 +1,6 @@
 {
     "name": "webforge/collections",
+    "description": "Collection extensions based on Doctrine\\Common\\Collections",
     "license": "MIT",
     "authors": [
         {
@@ -9,10 +10,10 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "doctrine/collections": "1.2.*@dev"
+        "doctrine/collections": "1.2.*"
     },
     "require-dev": {
-        "webforge/testplate": "1.2.*@dev"
+        "webforge/testplate": ">=1.2"
     },
     "autoload": {
         "psr-0": {

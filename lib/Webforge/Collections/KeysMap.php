@@ -4,6 +4,7 @@ namespace Webforge\Collections;
 
 use InvalidArgumentException;
 use Webforge\Common\Util;
+use stdClass;
 
 /**
  * A map from a variable number of keys to values
@@ -42,7 +43,11 @@ class KeysMap {
       if (is_array($key)) {
         throw new InvalidArgumentException('There are only strings as keys allowed. '.Util::varInfo($keys));
       }
-      
+
+      if ($data instanceof stdClass) {
+        $data = (array) $data;
+      }
+
       if (is_array($data) && array_key_exists($key, $data)) {
         $data = $data[$key];
 

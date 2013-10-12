@@ -419,4 +419,11 @@ class KeysMapTest extends \Webforge\Code\Test\Base {
     $map = new KeysMap($data);
     return $map;
   }
+
+
+  public function testCastsObjectsToArray() {
+    $map = $this->cons(array('obj'=>(object) array('var'=>'value')));
+
+    $this->assertEquals('value', $map->get(array('obj', 'var')));
+  }
 }

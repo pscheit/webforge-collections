@@ -3,3 +3,5 @@
 /composer.lock
 
 /webforge-collections.sublime-workspace
+
+/build/coverage

@@ -14,7 +14,8 @@
     },
     "require-dev": {
         "webforge/testplate": ">=1.2",
-        "satooshi/php-coveralls": "dev-master"
+        "satooshi/php-coveralls": "dev-master",
+        "liip/rmt": "0.9.*"
     },
     "autoload": {
         "psr-0": {

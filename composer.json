@@ -10,7 +10,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "doctrine/collections": "1.2.*"
+        "doctrine/collections": ">=1.2.0,<1.4.0"
     },
     "require-dev": {
         "webforge/testplate": ">=1.2",
